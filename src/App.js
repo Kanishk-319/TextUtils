@@ -1,8 +1,8 @@
 
 import './App.css';
 import {useState} from 'react'
-// import About from './components/About';
-// import { Routes, Route, Link } from "react-router-dom";
+import About from './components/About';
+import { Routes, Route, Link } from "react-router-dom";
 import Navbar from './components/Navbar';
 
 import TextForm from './components/TextForm';
@@ -70,10 +70,10 @@ function App() {
   <Navbar title="TextUtils" aboutText="About" mode={myMode} changeBlackMode={changeBlackMode} changeGreenMode={changeGreenMode} changeBlueMode={changeBlueMode} changeYellowMode={changeYellowMode}/>
   <Alerts alert={alert} />
   <TextForm heading="Enter the text to analyze below" mode={myMode} showAlert={showAlert}/>
-  {/* <Routes>
+   <Routes>
         <Route path="/" element={<TextForm heading="Enter the text to analyze below" mode={myMode} showAlert={showAlert}/>} />
         <Route path="/about" element={<About />} />
-      </Routes> */}
+      </Routes> 
   <div className="container my-3">
   
   </div>
