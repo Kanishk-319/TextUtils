@@ -69,7 +69,6 @@ function App() {
     <>
   <Navbar title="TextUtils" aboutText="About" mode={myMode} changeBlackMode={changeBlackMode} changeGreenMode={changeGreenMode} changeBlueMode={changeBlueMode} changeYellowMode={changeYellowMode}/>
   <Alerts alert={alert} />
-  <TextForm heading="Enter the text to analyze below" mode={myMode} showAlert={showAlert}/>
    <Routes>
         <Route path="/" element={<TextForm heading="Enter the text to analyze below" mode={myMode} showAlert={showAlert}/>} />
         <Route path="/about" element={<About />} />
